@@ -10,12 +10,11 @@ This repository contains a wide range of TTA methods for comparing classificatio
 - ImageNet-C: The open-source ImageNet-C dataset can be downloaded [here](https://zenodo.org/records/2235448#.Yj2RO_co_mF).
 
 ### Models  
-- ResNet-50: The pre-trained weights for ResNet-50 are provided in `/classification/ckpt/`, so no additional download is required.  
-- ViT-B/16: The pre-trained weights for ViT are obtained using the [timm library](https://github.com/huggingface/pytorch-image-models).
+- ResNet-50 or ViT-B/16: The pre-trained weights are available in [Torchvision](https://docs.pytorch.org/vision/stable/models.html) or [timm library](https://github.com/huggingface/pytorch-image-models).
 
 ### Get Started  
 
-1. First, download the dataset and set the dataset path in configration file.  
+1. First, download the dataset and pre-trained model weights, and set the dataset path in configration file.  
 2. Run the following command to start testing:
 ```
 test_time.py --cfg cfgs/[architecture]/imagenet_c/[methods].yaml
